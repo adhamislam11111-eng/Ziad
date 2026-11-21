@@ -112,6 +112,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -119,9 +122,27 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.65;
-  overflow-x: hidden;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   position: relative;
   transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+main,
+section,
+.container,
+.glass-card,
+.hero-content,
+.hero-visual,
+.about-grid,
+.edu-grid,
+.contact-grid,
+.footer-top,
+.nav-container {
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* Selection */
@@ -2610,20 +2631,102 @@ html[data-theme="light"] .moon-icon {
 
 /* Small Screens & Mobile Phones (< 640px) */
 @media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header,
+  .header.scrolled {
+    height: 64px;
+  }
+
+  .nav-container {
+    gap: 0.75rem;
+  }
+
+  .logo {
+    gap: 0.55rem;
+  }
+
+  .logo-box {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-name {
+    font-size: 0.95rem;
+  }
+
+  .hero-section {
+    padding-top: 96px;
+  }
+
+  .hero-container {
+    gap: 2.25rem;
+  }
+
+  .hero-badge {
+    max-width: 100%;
+    text-align: left;
+  }
+
   .section {
     padding: 4.5rem 0;
   }
 
   .hero-title {
-    font-size: 2.25rem;
+    font-size: clamp(2rem, 10vw, 2.25rem);
   }
 
   .hero-subtitle {
     font-size: 1.25rem;
   }
 
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
   .section-title {
     font-size: 1.95rem;
+  }
+
+  .career-showcase-card,
+  .achievements-card,
+  .contact-info-card {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .code-card-header {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .code-tab-title {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .code-card-body {
+    padding: 1rem;
+  }
+
+  .code-card-body pre {
+    max-width: 100%;
+    overflow-x: auto;
   }
 
   .hero-highlights {
@@ -2691,5 +2794,66 @@ html[data-theme="light"] .moon-icon {
 
   .modal-dialog {
     padding: 1.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .logo-tag,
+  .nav-cta,
+  .code-badge {
+    display: none;
+  }
+
+  .logo-name {
+    font-size: 0.82rem;
+  }
+
+  .nav-toggle-btn,
+  .theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-menu {
+    width: min(290px, calc(100vw - 32px));
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+  }
+
+  .section-title,
+  .career-title {
+    font-size: 1.7rem;
+  }
+
+  .highlight-item {
+    align-items: flex-start;
+  }
+
+  .career-showcase-card,
+  .achievements-card,
+  .contact-info-card,
+  .timeline-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-links-list,
+  .social-buttons-grid {
+    grid-template-columns: 1fr;
   }
 }
