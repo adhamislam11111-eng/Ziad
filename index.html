@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Primary Meta Tags -->
+  <title>Ziad Mohamed | Artificial Intelligence Student & Flutter Developer</title>
+  <meta name="title" content="Ziad Mohamed | Artificial Intelligence Student & Flutter Developer">
+  <meta name="description" content="Portfolio of Ziad Mohamed - 19-year-old Artificial Intelligence student at Faculty of Science in Egypt &amp; Flutter Developer specializing in AI, Machine Learning, and Mobile Application Development.">
+  <meta name="keywords" content="Ziad Mohamed, Flutter Developer, Artificial Intelligence, Mobile App Developer, Dart, Firebase, Clean Architecture, Egypt, Machine Learning">
+  <meta name="author" content="Ziad Mohamed">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ziadmohamed.dev/">
+  <meta property="og:title" content="Ziad Mohamed | Artificial Intelligence Student & Flutter Developer">
+  <meta property="og:description" content="Passionate about Artificial Intelligence and Mobile Application Development. Hands-on experience building Flutter apps, integrating Firebase, and applying Clean Architecture.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Ziad Mohamed | Artificial Intelligence Student & Flutter Developer">
+  <meta property="twitter:description" content="Portfolio of Ziad Mohamed - AI Student &amp; Flutter Developer with 6+ developed applications and 100% client satisfaction.">
+
+  <!-- Favicon (SVG data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230a0f1d'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='42' font-weight='900' fill='%2306b6d4'>ZM</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Neural Network Canvas -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Ziad Mohamed Home">
+        <span class="logo-box">ZM</span>
+        <div class="logo-text">
+          <span class="logo-name">Ziad Mohamed</span>
+          <span class="logo-tag">AI &bull; Flutter</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Trigger) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch between light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+        </button>
+
+        <!-- CTA Header Button (Desktop) -->
+        <a href="#contact" class="btn btn-outline btn-sm nav-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="nav-toggle" class="nav-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <!-- Interactive Neural Net & Particle Canvas -->
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="hero-badge fade-in">
+            <span class="status-dot"></span>
+            <span>Available for Opportunities &bull; Student in Egypt</span>
+          </div>
+
+          <!-- Main Greeting & Title -->
+          <h1 class="hero-title fade-in">
+            Hi, I'm <span class="gradient-text">Ziad Mohamed</span>.
+          </h1>
+          
+          <h2 class="hero-subtitle fade-in">
+            Artificial Intelligence Student <span class="separator">&</span> Flutter Developer
+          </h2>
+
+          <!-- Introductory Statement -->
+          <p class="hero-desc fade-in">
+            I'm passionate about Artificial Intelligence and Mobile Application Development, with hands-on experience building Flutter applications and exploring intelligent technologies. I enjoy transforming ideas into practical, efficient, and user-friendly digital solutions.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group fade-in">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Hero Highlights Quick Row -->
+          <div class="hero-highlights fade-in">
+            <div class="highlight-item">
+              <i class="fa-solid fa-mobile-screen-button highlight-icon"></i>
+              <div class="highlight-text">
+                <strong>6+ Applications</strong>
+                <span>Developed & Delivered</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-face-smile highlight-icon"></i>
+              <div class="highlight-text">
+                <strong>100% Satisfaction</strong>
+                <span>Across Client Projects</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-bolt highlight-icon"></i>
+              <div class="highlight-text">
+                <strong>30% Faster</strong>
+                <span>Screen Loading Time</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-halved highlight-icon"></i>
+              <div class="highlight-text">
+                <strong>High Stability</strong>
+                <span>Performance Focused</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Card -->
+        <div class="hero-visual fade-in">
+          <div class="glass-card hero-code-card">
+            <!-- Mac Window Controls -->
+            <div class="code-card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="code-tab-title"><i class="fa-solid fa-code"></i> developer_profile.dart</span>
+              <span class="code-badge">Flutter + AI</span>
+            </div>
+
+            <!-- Code Block / Interactive Showcase -->
+            <div class="code-card-body">
+              <pre><code><span class="code-keyword">class</span> <span class="code-class">ZiadMohamed</span> <span class="code-keyword">extends</span> <span class="code-class">TechInnovator</span> {
+  <span class="code-keyword">final</span> <span class="code-type">String</span> name = <span class="code-string">"Ziad Mohamed"</span>;
+  <span class="code-keyword">final</span> <span class="code-type">String</span> nickname = <span class="code-string">"Zezo"</span>;
+  <span class="code-keyword">final</span> <span class="code-type">int</span> age = <span class="code-number">19</span>;
+  <span class="code-keyword">final</span> <span class="code-type">String</span> location = <span class="code-string">"Egypt"</span>;
+  <span class="code-keyword">final</span> <span class="code-type">String</span> major = <span class="code-string">"Faculty of Science - AI"</span>;
+
+  <span class="code-keyword">final</span> <span class="code-type">List</span>&lt;<span class="code-type">String</span>&gt; coreFields = [
+    <span class="code-string">"Artificial Intelligence"</span>,
+    <span class="code-string">"Machine Learning"</span>,
+    <span class="code-string">"Flutter & Dart"</span>,
+    <span class="code-string">"Clean Architecture"</span>,
+  ];
+
+  <span class="code-type">Future</span>&lt;<span class="code-type">Solution</span>&gt; buildProduct() <span class="code-keyword">async</span> {
+    <span class="code-keyword">return</span> <span class="code-class">SmartMobileApp</span>(
+      fast: <span class="code-bool">true</span>,
+      clean: <span class="code-bool">true</span>,
+      intelligent: <span class="code-bool">true</span>,
+    );
+  }
+}</code></pre>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-flutter">
+              <i class="fa-brands fa-flutter"></i>
+              <span>Flutter &bull; Dart</span>
+            </div>
+            <div class="floating-badge badge-ai">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI &bull; ML</span>
+            </div>
+            <div class="floating-badge badge-satisfaction">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>100% Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span>Explore Portfolio</span>
+        <i class="fa-solid fa-angles-down"></i>
+      </a>
+    </section>
+
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Card with Photo Placeholder -->
+          <div class="about-card-col">
+            <div class="about-profile-card glass-card">
+              <div class="profile-avatar-wrapper">
+                <!-- Profile Image Placeholder (Easily replaceable with an actual photo: e.g. src="images/ziad.jpg") -->
+                <div class="avatar-placeholder" id="avatar-container">
+                  <div class="avatar-inner">
+                    <!-- High-tech SVG Developer Avatar -->
+                    <svg viewBox="0 0 200 200" class="avatar-svg" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#06b6d4" />
+                          <stop offset="50%" stop-color="#3b82f6" />
+                          <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                      </defs>
+                      <circle cx="100" cy="100" r="95" fill="none" stroke="url(#avatarGrad)" stroke-width="4" stroke-dasharray="8 6"/>
+                      <circle cx="100" cy="100" r="85" fill="#0f172a"/>
+                      <!-- Stylized Figure -->
+                      <path d="M100 45 A 25 25 0 0 1 100 95 A 25 25 0 0 1 100 45 Z" fill="url(#avatarGrad)"/>
+                      <path d="M55 160 C 55 125, 145 125, 145 160 Z" fill="url(#avatarGrad)" opacity="0.85"/>
+                      <!-- Code symbol overlay -->
+                      <text x="100" y="115" text-anchor="middle" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">&lt;ZM/&gt;</text>
+                    </svg>
+                  </div>
+                  <div class="avatar-badge" title="Open to Opportunities">
+                    <span class="pulse-dot"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-card-details">
+                <h3 class="profile-name">Ziad Mohamed</h3>
+                <p class="profile-nickname">Also known as <strong>"Zezo"</strong></p>
+                <div class="profile-role-tag">AI Student &bull; Flutter Developer</div>
+
+                <div class="profile-meta-list">
+                  <div class="meta-item">
+                    <span class="meta-label"><i class="fa-solid fa-cake-candles"></i> Age:</span>
+                    <span class="meta-val">19 Years Old</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label"><i class="fa-solid fa-location-dot"></i> Country:</span>
+                    <span class="meta-val">Egypt</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label"><i class="fa-solid fa-building-columns"></i> University:</span>
+                    <span class="meta-val">Faculty of Science</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label"><i class="fa-solid fa-graduation-cap"></i> Major:</span>
+                    <span class="meta-val">Artificial Intelligence</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label"><i class="fa-solid fa-circle-check"></i> Status:</span>
+                    <span class="meta-val text-success">Active University Student</span>
+                  </div>
+                </div>
+
+                <!-- Replace Photo Note for Developer -->
+                <div class="photo-replace-note">
+                  <i class="fa-regular fa-image"></i>
+                  <span>Ready to replace with <code>img/profile.jpg</code></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Content -->
+          <div class="about-content-col">
+            <div class="about-story glass-card">
+              <h3 class="story-heading">
+                Bridging Intelligent Algorithms <span class="gradient-text">with Modern Mobile Experiences</span>
+              </h3>
+
+              <p class="about-paragraph">
+                My name is <strong>Ziad Mohamed</strong>, a 19-year-old Artificial Intelligence student at the Faculty of Science in Egypt, with a strong interest in software engineering, intelligent systems, and mobile application development.
+              </p>
+
+              <p class="about-paragraph">
+                Alongside my academic studies, I have developed practical experience in Flutter and Dart, building more than six applications and delivering projects with a strong focus on user experience, performance, and code quality.
+              </p>
+
+              <p class="about-paragraph">
+                I have worked with Firebase and explored Clean Architecture principles to build organized and maintainable applications.
+              </p>
+
+              <div class="about-quote-box">
+                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                <blockquote>
+                  "I believe that successful software development is not just about writing code; it is about understanding problems, designing effective solutions, and continuously improving the final product."
+                </blockquote>
+              </div>
+
+              <p class="about-paragraph">
+                My goal is to combine Artificial Intelligence with mobile development to create smart, reliable, and impactful applications.
+              </p>
+
+              <!-- Pillars Grid -->
+              <div class="pillars-grid">
+                <div class="pillar-card">
+                  <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                  <h4>AI & ML Foundations</h4>
+                  <p>Exploring intelligent models, computer vision, and NLP algorithms for practical utility.</p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon"><i class="fa-brands fa-flutter"></i></div>
+                  <h4>Cross-Platform Flutter</h4>
+                  <p>Crafting silky 60fps, responsive mobile interfaces across iOS and Android ecosystems.</p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                  <h4>Clean Architecture</h4>
+                  <p>Writing modular, decoupled, testable code that scales smoothly over time.</p>
+                </div>
+                <div class="pillar-card">
+                  <div class="pillar-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                  <h4>Performance Driven</h4>
+                  <p>Optimizing render pipelines and reducing screen load times by 30%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS & TECHNICAL EXPERTISE SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technical Expertise</h2>
+          <p class="section-desc">
+            Organized knowledge areas across Artificial Intelligence, Mobile Application Development, Backend Infrastructure, and Software Engineering.
+          </p>
+          <div class="section-divider"></div>
+
+          <!-- Category Filters -->
+          <div class="skills-filter-nav" role="tablist" aria-label="Skills Filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI & Data Science</button>
+            <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Development</button>
+            <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend & Databases</button>
+            <button class="filter-btn" data-filter="software" role="tab" aria-selected="false">Software Engineering</button>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. AI & Data Science -->
+          <div class="skill-category-card glass-card" data-category="ai">
+            <div class="category-header">
+              <div class="category-icon-box cat-ai">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Artificial Intelligence & Data Science</h3>
+                <span class="category-subtitle">Intelligent systems & computational models</span>
+              </div>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <i class="fa-brands fa-python"></i>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-network-wired"></i>
+                <span class="skill-name">Machine Learning</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="skill-name">Deep Learning</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span class="skill-name">Data Analysis</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-eye"></i>
+                <span class="skill-name">Computer Vision</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-comments"></i>
+                <span class="skill-name">Natural Language Processing (NLP)</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-microchip"></i>
+                <span class="skill-name">TensorFlow</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <span class="skill-name">PyTorch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Mobile Application Development -->
+          <div class="skill-category-card glass-card" data-category="mobile">
+            <div class="category-header">
+              <div class="category-icon-box cat-mobile">
+                <i class="fa-brands fa-flutter"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Mobile Application Development</h3>
+                <span class="category-subtitle">Cross-platform client applications</span>
+              </div>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <i class="fa-brands fa-flutter"></i>
+                <span class="skill-name">Flutter</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-code"></i>
+                <span class="skill-name">Dart</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-fire"></i>
+                <span class="skill-name">Firebase for Flutter</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-plug"></i>
+                <span class="skill-name">REST API Integration</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-sitemap"></i>
+                <span class="skill-name">Application Architecture</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span class="skill-name">Responsive UI Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Backend & Database Technologies -->
+          <div class="skill-category-card glass-card" data-category="backend">
+            <div class="category-header">
+              <div class="category-icon-box cat-backend">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Backend & Database Technologies</h3>
+                <span class="category-subtitle">Cloud infrastructure & data stores</span>
+              </div>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="skill-name">Firebase Authentication</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-fire"></i>
+                <span class="skill-name">Cloud Firestore</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-hard-drive"></i>
+                <span class="skill-name">Firebase Storage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Software Development -->
+          <div class="skill-category-card glass-card" data-category="software">
+            <div class="category-header">
+              <div class="category-icon-box cat-software">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Software Development</h3>
+                <span class="category-subtitle">Engineering principles & code quality</span>
+              </div>
+            </div>
+            <div class="skills-chips-wrapper">
+              <div class="skill-chip">
+                <i class="fa-solid fa-layer-group"></i>
+                <span class="skill-name">Clean Architecture</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-cubes"></i>
+                <span class="skill-name">Object-Oriented Programming (OOP)</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <span class="skill-name">Problem Solving</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span class="skill-name">Application Performance Optimization</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-bug-slash"></i>
+                <span class="skill-name">Debugging and Error Handling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            Representative mobile and intelligent software implementations reflecting clean coding principles and responsive UI architecture.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card glass-card">
+            <div class="project-mockup">
+              <!-- Visual Mockup SVG -->
+              <svg viewBox="0 0 400 240" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#0f172a"/>
+                <circle cx="200" cy="120" r="100" fill="url(#avatarGrad)" opacity="0.12"/>
+                <!-- Smartphone silhouette -->
+                <rect x="135" y="20" width="130" height="200" rx="20" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+                <rect x="145" y="35" width="110" height="170" rx="12" fill="#0b0f19"/>
+                <rect x="155" y="50" width="90" height="35" rx="6" fill="#38bdf8" opacity="0.3"/>
+                <circle cx="170" cy="110" r="12" fill="#818cf8"/>
+                <circle cx="200" cy="110" r="12" fill="#38bdf8"/>
+                <circle cx="230" cy="110" r="12" fill="#34d399"/>
+                <rect x="155" y="135" width="90" height="12" rx="4" fill="#334155"/>
+                <rect x="155" y="155" width="65" height="10" rx="4" fill="#334155"/>
+                <rect x="155" y="175" width="90" height="20" rx="6" fill="#06b6d4" opacity="0.8"/>
+              </svg>
+              <div class="project-badge">Project 01</div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">Mobile Application</span>
+              <h3 class="project-title">Project 01 &mdash; Flutter Mobile Application</h3>
+              <p class="project-desc">
+                A mobile application developed using Flutter and Dart, focusing on modern UI design, functionality, and user experience. Built with responsive layouts and fluid transitions across screen sizes.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Responsive UI</span>
+                <span class="tag">State Management</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="1">
+                  <i class="fa-regular fa-eye"></i> View Details
+                </button>
+                <a href="#" class="btn btn-sm btn-ghost placeholder-link" data-type="GitHub Link" title="Repository placeholder">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card glass-card">
+            <div class="project-mockup">
+              <!-- Visual Mockup SVG -->
+              <svg viewBox="0 0 400 240" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#0f172a"/>
+                <circle cx="200" cy="120" r="90" fill="#f59e0b" opacity="0.12"/>
+                <!-- Cloud & Database -->
+                <path d="M140 140 A 30 30 0 0 1 190 100 A 40 40 0 0 1 250 110 A 30 30 0 0 1 270 140 Z" fill="#f59e0b" opacity="0.4"/>
+                <rect x="170" y="130" width="60" height="18" rx="4" fill="#f59e0b"/>
+                <rect x="170" y="155" width="60" height="18" rx="4" fill="#f59e0b" opacity="0.8"/>
+                <rect x="170" y="180" width="60" height="18" rx="4" fill="#f59e0b" opacity="0.6"/>
+                <line x1="200" y1="70" x2="200" y2="100" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 4"/>
+                <circle cx="200" cy="65" r="8" fill="#38bdf8"/>
+              </svg>
+              <div class="project-badge">Project 02</div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">Cloud Integrated</span>
+              <h3 class="project-title">Project 02 &mdash; Firebase Integrated Application</h3>
+              <p class="project-desc">
+                A Flutter application demonstrating Firebase integration and cloud-based application functionality. Features user authentication, cloud Firestore data synchronization, and cloud storage management.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase Auth</span>
+                <span class="tag">Firestore</span>
+                <span class="tag">Cloud Storage</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="2">
+                  <i class="fa-regular fa-eye"></i> View Details
+                </button>
+                <a href="#" class="btn btn-sm btn-ghost placeholder-link" data-type="GitHub Link" title="Repository placeholder">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card glass-card">
+            <div class="project-mockup">
+              <!-- Visual Mockup SVG -->
+              <svg viewBox="0 0 400 240" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#0f172a"/>
+                <circle cx="200" cy="120" r="110" fill="#8b5cf6" opacity="0.15"/>
+                <!-- Neural Network Nodes -->
+                <circle cx="130" cy="80" r="10" fill="#8b5cf6"/>
+                <circle cx="130" cy="160" r="10" fill="#8b5cf6"/>
+                <circle cx="200" cy="60" r="10" fill="#06b6d4"/>
+                <circle cx="200" cy="120" r="12" fill="#3b82f6"/>
+                <circle cx="200" cy="180" r="10" fill="#06b6d4"/>
+                <circle cx="270" cy="120" r="14" fill="#a855f7"/>
+                <line x1="130" y1="80" x2="200" y2="60" stroke="#64748b" stroke-width="2"/>
+                <line x1="130" y1="80" x2="200" y2="120" stroke="#64748b" stroke-width="2"/>
+                <line x1="130" y1="160" x2="200" y2="120" stroke="#64748b" stroke-width="2"/>
+                <line x1="130" y1="160" x2="200" y2="180" stroke="#64748b" stroke-width="2"/>
+                <line x1="200" y1="60" x2="270" y2="120" stroke="#64748b" stroke-width="2"/>
+                <line x1="200" y1="120" x2="270" y2="120" stroke="#64748b" stroke-width="2"/>
+                <line x1="200" y1="180" x2="270" y2="120" stroke="#64748b" stroke-width="2"/>
+              </svg>
+              <div class="project-badge">Project 03</div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">Artificial Intelligence</span>
+              <h3 class="project-title">Project 03 &mdash; AI-Based Application</h3>
+              <p class="project-desc">
+                An application concept exploring the integration of Artificial Intelligence into practical digital solutions. Designed to leverage trained models to enhance user interactions and automated data insights.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">AI Concept</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Python</span>
+                <span class="tag">Flutter</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="3">
+                  <i class="fa-regular fa-eye"></i> View Details
+                </button>
+                <a href="#" class="btn btn-sm btn-ghost placeholder-link" data-type="GitHub Link" title="Repository placeholder">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card glass-card">
+            <div class="project-mockup">
+              <!-- Visual Mockup SVG -->
+              <svg viewBox="0 0 400 240" class="project-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#0f172a"/>
+                <circle cx="200" cy="120" r="100" fill="#10b981" opacity="0.12"/>
+                <!-- Clean Architecture Concentric Circles -->
+                <circle cx="200" cy="120" r="85" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="6 4"/>
+                <circle cx="200" cy="120" r="60" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                <circle cx="200" cy="120" r="35" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                <text x="200" y="125" text-anchor="middle" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="11">DOMAIN</text>
+                <text x="200" y="80" text-anchor="middle" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">DATA LAYER</text>
+                <text x="200" y="55" text-anchor="middle" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9">PRESENTATION</text>
+              </svg>
+              <div class="project-badge">Project 04</div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-category">Software Architecture</span>
+              <h3 class="project-title">Project 04 &mdash; Clean Architecture Project</h3>
+              <p class="project-desc">
+                A Flutter application structured around Clean Architecture principles to improve code organization, maintainability, and scalability. Separates business logic, domain models, and presentation layers cleanly.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Clean Architecture</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Scalability</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="4">
+                  <i class="fa-regular fa-eye"></i> View Details
+                </button>
+                <a href="#" class="btn btn-sm btn-ghost placeholder-link" data-type="GitHub Link" title="Repository placeholder">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ACHIEVEMENTS & PERFORMANCE SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Measurable Impact</span>
+          <h2 class="section-title">Achievements & Performance</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-card glass-card">
+          <div class="achievements-intro text-center">
+            <p>
+              These achievements reflect practical development experience, performance optimization, and a commitment to delivering reliable, responsive, and well-architected applications.
+            </p>
+          </div>
+
+          <!-- Counter Stats Grid -->
+          <div class="stats-grid">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div class="stat-number-box">
+                <span class="counter" data-target="6">0</span><span class="counter-suffix">+</span>
+              </div>
+              <h3 class="stat-title">Applications Developed</h3>
+              <p class="stat-desc">End-to-end mobile applications built using Flutter and Dart.</p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="stat-number-box">
+                <span class="counter" data-target="100">0</span><span class="counter-suffix">%</span>
+              </div>
+              <h3 class="stat-title">Client Satisfaction</h3>
+              <p class="stat-desc">Reported satisfaction rate across delivered client projects.</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <div class="stat-number-box">
+                <span class="counter" data-target="30">0</span><span class="counter-suffix">%</span>
+              </div>
+              <h3 class="stat-title">Reduction in Loading Time</h3>
+              <p class="stat-desc">Faster screen rendering and optimized state management routines.</p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="stat-card">
+              <div class="stat-icon-wrapper">
+                <i class="fa-solid fa-shield-check"></i>
+              </div>
+              <div class="stat-number-box stat-text-highlight">
+                <span>Improved</span>
+              </div>
+              <h3 class="stat-title">Stability & Error Reduction</h3>
+              <p class="stat-desc">Enhanced application reliability through rigorous debugging and architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EDUCATION & COURSES SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic & Self-Directed Growth</span>
+          <h2 class="section-title">Education & Courses</h2>
+          <p class="section-desc">
+            Foundational university studies combined with specialized industry technical courses.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Academic Education Card -->
+          <div class="edu-degree-card glass-card">
+            <div class="card-badge-top">Academic Degree</div>
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3 class="edu-institution">Faculty of Science</h3>
+                <h4 class="edu-dept">Artificial Intelligence Department</h4>
+                <div class="edu-location"><i class="fa-solid fa-location-dot"></i> Egypt</div>
+              </div>
+            </div>
+            <div class="edu-body">
+              <p>
+                Pursuing comprehensive academic coursework centered on Artificial Intelligence, core computer science principles, mathematical foundations, data structures, and intelligent system architectures.
+              </p>
+              <div class="academic-focus-pills">
+                <span class="pill">Intelligent Systems</span>
+                <span class="pill">Machine Learning Theory</span>
+                <span class="pill">Algorithm Design</span>
+                <span class="pill">Data Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Courses Cards Column -->
+          <div class="courses-col">
+            <h3 class="courses-group-title">
+              <i class="fa-solid fa-certificate"></i> Technical Courses & Learning
+            </h3>
+
+            <!-- Course 1 -->
+            <div class="course-item-card glass-card">
+              <div class="course-index">01</div>
+              <div class="course-info">
+                <h4 class="course-name">Flutter & Dart</h4>
+                <div class="course-provider">
+                  <span class="provider-badge"><i class="fa-solid fa-play"></i> Udemy</span>
+                  <span class="course-topic">Mobile Development</span>
+                </div>
+                <p class="course-summary">
+                  Comprehensive training in widget lifecycles, state management, asynchronous Dart programming, and cross-platform UI development.
+                </p>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-item-card glass-card">
+              <div class="course-index">02</div>
+              <div class="course-info">
+                <h4 class="course-name">Firebase for Flutter</h4>
+                <div class="course-provider">
+                  <span class="provider-badge"><i class="fa-solid fa-play"></i> Udemy</span>
+                  <span class="course-topic">Cloud & Backend</span>
+                </div>
+                <p class="course-summary">
+                  In-depth implementation of user authentication, real-time Cloud Firestore synchronization, cloud functions, and remote storage.
+                </p>
+              </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-item-card glass-card">
+              <div class="course-index">03</div>
+              <div class="course-info">
+                <h4 class="course-name">Clean Architecture in Flutter</h4>
+                <div class="course-provider">
+                  <span class="provider-badge"><i class="fa-solid fa-book-open"></i> Specialized Study</span>
+                  <span class="course-topic">Architecture & Design</span>
+                </div>
+                <p class="course-summary">
+                  Structuring scalable codebases separating Domain (Use Cases, Entities), Data (Repositories, Models), and Presentation layers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Hands-on Track Record</span>
+          <h2 class="section-title">Experience & Practical Work</h2>
+          <p class="section-desc">
+            Practical development experience gained through independent engineering, client projects, and continuous optimization.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-wrapper">
+          <!-- Item 1: Flutter Application Development -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-brands fa-flutter"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-title">Flutter Application Development</h3>
+                  <div class="exp-role">
+                    <span class="role-badge">Role: Flutter Developer</span>
+                    <span class="type-badge">Independent Projects & Client Projects</span>
+                  </div>
+                </div>
+              </div>
+              <p class="exp-summary">
+                Hands-on execution of full-lifecycle mobile application projects, emphasizing performance, responsiveness, and clean code principles.
+              </p>
+              <div class="exp-contributions">
+                <h4 class="contrib-title">Key Contributions:</h4>
+                <ul class="contrib-list">
+                  <li><i class="fa-solid fa-check"></i> Developed and delivered more than six mobile applications.</li>
+                  <li><i class="fa-solid fa-check"></i> Built application interfaces using Flutter and Dart.</li>
+                  <li><i class="fa-solid fa-check"></i> Integrated Firebase services into Flutter applications.</li>
+                  <li><i class="fa-solid fa-check"></i> Applied Clean Architecture principles to improve project organization.</li>
+                  <li><i class="fa-solid fa-check"></i> Focused on application performance, stability, and user experience.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Application Performance Optimization -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-title">Application Performance Optimization</h3>
+                  <div class="exp-role">
+                    <span class="role-badge">Engineering Focus</span>
+                    <span class="type-badge">Technical Refinement</span>
+                  </div>
+                </div>
+              </div>
+              <p class="exp-summary">
+                Proactive auditing and architectural enhancement to eliminate UI jank and streamline data flow across screens.
+              </p>
+              <div class="exp-contributions">
+                <h4 class="contrib-title">Key Contributions:</h4>
+                <ul class="contrib-list">
+                  <li><i class="fa-solid fa-check"></i> Reduced screen loading time by 30%.</li>
+                  <li><i class="fa-solid fa-check"></i> Improved application stability across diverse mobile device profiles.</li>
+                  <li><i class="fa-solid fa-check"></i> Reduced application errors through development and debugging improvements.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Client Project Delivery -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-title">Client Project Delivery</h3>
+                  <div class="exp-role">
+                    <span class="role-badge">Client Collaboration</span>
+                    <span class="type-badge">Project Delivery</span>
+                  </div>
+                </div>
+              </div>
+              <p class="exp-summary">
+                Direct client collaboration, translating business goals into clear mobile solutions while respecting timelines and quality bars.
+              </p>
+              <div class="exp-contributions">
+                <h4 class="contrib-title">Key Contributions:</h4>
+                <ul class="contrib-list">
+                  <li><i class="fa-solid fa-check"></i> Delivered projects with a reported 100% client satisfaction rate.</li>
+                  <li><i class="fa-solid fa-check"></i> Focused on understanding project requirements in detail.</li>
+                  <li><i class="fa-solid fa-check"></i> Maintained high attention to quality and delivery expectations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROFESSIONAL SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Value & Capabilities</span>
+          <h2 class="section-title">What I Can Do</h2>
+          <p class="section-desc">
+            Professional services and engineering offerings tailored for startups, companies, clients, and technical teams.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card glass-card">
+            <div class="service-icon-box">
+              <i class="fa-brands fa-flutter"></i>
+            </div>
+            <h3 class="service-title">1. Flutter Mobile Development</h3>
+            <p class="service-desc">
+              Building responsive, modern, and user-friendly mobile applications using Flutter and Dart tailored for both Android and iOS platforms.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Pixel-perfect UI implementation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Cross-platform code efficiency</li>
+              <li><i class="fa-solid fa-circle-check"></i> Smooth 60fps animations</li>
+            </ul>
+            <a href="#contact" class="service-cta-link" data-service="Flutter Mobile Development">
+              <span>Inquire about mobile apps</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card glass-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <h3 class="service-title">2. Firebase Integration</h3>
+            <p class="service-desc">
+              Integrating Firebase services into mobile applications to support authentication, cloud databases, and storage with real-time sync.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Secure Auth (Email, Social)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-time Cloud Firestore</li>
+              <li><i class="fa-solid fa-circle-check"></i> Scalable Cloud Media Storage</li>
+            </ul>
+            <a href="#contact" class="service-cta-link" data-service="Firebase Integration">
+              <span>Inquire about Firebase</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card glass-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="service-title">3. Application Optimization</h3>
+            <p class="service-desc">
+              Improving application performance, loading speed, stability, and overall user experience through profiling and code refactoring.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> 30% Screen load reduction</li>
+              <li><i class="fa-solid fa-circle-check"></i> Memory leak identification</li>
+              <li><i class="fa-solid fa-circle-check"></i> State management streamlining</li>
+            </ul>
+            <a href="#contact" class="service-cta-link" data-service="Application Optimization">
+              <span>Inquire about optimization</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card glass-card">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="service-title">4. AI-Based Application Development</h3>
+            <p class="service-desc">
+              Exploring and developing intelligent application solutions using Artificial Intelligence and Machine Learning technologies.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Smart feature prototyping</li>
+              <li><i class="fa-solid fa-circle-check"></i> Computer Vision & NLP exploration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Client-AI pipeline integration</li>
+            </ul>
+            <a href="#contact" class="service-cta-link" data-service="AI-Based Application Development">
+              <span>Inquire about AI solutions</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CAREER OBJECTIVE SECTION -->
+    <section class="section career-section" id="career">
+      <div class="container">
+        <div class="career-showcase-card glass-card">
+          <div class="career-glow-circle" aria-hidden="true"></div>
+          <div class="career-content-wrapper">
+            <span class="section-tag">Vision & Direction</span>
+            <h2 class="career-title">My Career Objective</h2>
+            <div class="section-divider"></div>
+
+            <div class="career-body-text">
+              <p class="career-lead">
+                My ambition is to grow as an Artificial Intelligence and Software Development professional by combining my academic knowledge with practical engineering experience.
+              </p>
+              <p>
+                I aim to develop intelligent, scalable, and user-focused applications that solve real-world problems.
+              </p>
+              <p>
+                I am continuously improving my skills in Artificial Intelligence, Machine Learning, Flutter, and modern software engineering practices, while seeking opportunities to collaborate with talented teams, contribute to meaningful projects, and create measurable impact through technology.
+              </p>
+            </div>
+
+            <div class="career-highlights-row">
+              <div class="career-pill">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Real-World Impact</span>
+              </div>
+              <div class="career-pill">
+                <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                <span>AI + Mobile Synergy</span>
+              </div>
+              <div class="career-pill">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <span>Continuous Engineering Growth</span>
+              </div>
+              <div class="career-pill">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <span>Collaborative Mindset</span>
+              </div>
+            </div>
+
+            <div class="career-cta">
+              <a href="#contact" class="btn btn-primary">
+                <span>Discuss Collaboration or Internship</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-desc">
+            Have a project idea, collaboration opportunity, internship opportunity, or simply want to connect? I'd be happy to hear from you.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info & Socials Column -->
+          <div class="contact-info-col">
+            <div class="glass-card contact-info-card">
+              <h3 class="info-card-heading">Contact Information</h3>
+              <p class="info-card-desc">
+                Feel free to reach out directly through the form or via my social channels. I respond actively to meaningful technical inquiries and collaboration requests.
+              </p>
+
+              <div class="contact-methods">
+                <!-- Email Placeholder -->
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                  <div class="method-content">
+                    <span class="method-label">Email Address</span>
+                    <a href="mailto:ziad.mohamed.dev@placeholder.com" class="method-value" id="contact-email-link" title="Click to copy email">
+                      ziad.mohamed.dev@placeholder.com
+                    </a>
+                    <span class="placeholder-notice">(Editable email placeholder)</span>
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="method-content">
+                    <span class="method-label">Location</span>
+                    <span class="method-value">Egypt (Faculty of Science &mdash; AI)</span>
+                  </div>
+                </div>
+
+                <!-- Status -->
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <div class="method-content">
+                    <span class="method-label">Opportunities</span>
+                    <span class="method-value">Open to Internships, Projects & Roles</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="social-links-section">
+                <h4 class="socials-heading">Professional Profiles & Socials</h4>
+                <p class="socials-sub">Placeholders ready for live profile URLs</p>
+                
+                <div class="social-buttons-grid">
+                  <!-- GitHub -->
+                  <a href="#" class="social-btn placeholder-link" data-type="GitHub" aria-label="Ziad Mohamed GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <!-- LinkedIn -->
+                  <a href="#" class="social-btn placeholder-link" data-type="LinkedIn" aria-label="Ziad Mohamed LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <!-- YouTube -->
+                  <a href="#" class="social-btn placeholder-link" data-type="YouTube" aria-label="Ziad Mohamed YouTube" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube</span>
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#" class="social-btn placeholder-link" data-type="Facebook" aria-label="Ziad Mohamed Facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="glass-card contact-form-card">
+              <h3 class="form-card-heading">Send a Message</h3>
+              <p class="form-card-desc">Fill out the details below and I will get back to you promptly.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    Full Name <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input 
+                      type="text" 
+                      id="contact-name" 
+                      name="name" 
+                      class="form-input" 
+                      placeholder="e.g. Alex Johnson"
+                      required
+                      minlength="2"
+                      maxlength="80"
+                    >
+                  </div>
+                  <span class="field-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    Email Address <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input 
+                      type="email" 
+                      id="contact-email" 
+                      name="email" 
+                      class="form-input" 
+                      placeholder="e.g. alex@company.com"
+                      required
+                    >
+                  </div>
+                  <span class="field-error" id="email-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject -->
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">
+                    Subject <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input 
+                      type="text" 
+                      id="contact-subject" 
+                      name="subject" 
+                      class="form-input" 
+                      placeholder="e.g. Mobile App Project / Internship Opportunity"
+                      required
+                      minlength="3"
+                    >
+                  </div>
+                  <span class="field-error" id="subject-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">
+                    Message <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                    <textarea 
+                      id="contact-message" 
+                      name="message" 
+                      rows="5" 
+                      class="form-input form-textarea" 
+                      placeholder="Briefly describe your project, idea, or message..."
+                      required
+                      minlength="10"
+                    ></textarea>
+                  </div>
+                  <span class="field-error" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fa-solid fa-paper-plane btn-icon"></i>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-box">ZM</span>
+            <span class="footer-name">Ziad Mohamed</span>
+          </div>
+          <p class="footer-statement">
+            Designed with passion for technology, innovation, and continuous learning.
+          </p>
+        </div>
+
+        <div class="footer-quick-links">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-back-col">
+          <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Ziad Mohamed. All Rights Reserved.
+        </p>
+        <p class="footer-specs">
+          Built with HTML5 &bull; CSS3 &bull; Vanilla JavaScript
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">Project Category</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-secondary placeholder-link" id="modal-repo-link" data-type="GitHub Repository">
+          <i class="fa-brands fa-github"></i> <span>GitHub Placeholder</span>
+        </a>
+        <button class="btn btn-primary" id="modal-dismiss-btn">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
